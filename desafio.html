@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesafioMultiplicacion</title>
+</head>
+
+<body>
+    <script>
+
+        // solcita numero para calcular
+        var num = parseFloat(prompt("Ingrese un numero entre 1 y 20:"));
+
+        // condicion para realizar el calculo
+        if (num >= 1 && num <= 20) {
+
+            // funcion multiplicacion
+            let multi = (n) => {
+                for (i = 1; i <= n; i++) {
+                    var resultado = n * i;
+                    console.log(`${n} X ${i} = ${resultado}`)// Entrega valor por consola
+                }
+            }
+
+            // funcion factorial
+            let factorial = (n) => {
+                var total = 1;
+                for (i = 1; i <= n; i++) {
+                    total = total * i;
+                    console.log("Factorial de " + i + " es: " + total);// entrega valor por consola
+                }
+                return total;
+            }
+
+            multi(num);
+            factorial(num);
+
+        } else {
+            console.log("Numero fuera de Rango")
+        }
+    </script>
+</body>
+
+</html>
